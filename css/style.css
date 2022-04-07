@@ -158,6 +158,10 @@ aside hr{
     font-weight: 500;
 }
 
+.main-right{
+    overflow-y: scroll;
+}
+
 /* FOOTER */
 
 footer{
@@ -256,6 +260,19 @@ footer{
     left: -50px ;
 }
 
+
+.footer-col-right .media-hover{
+    position: absolute;
+    height: 4px;
+    width: 30%;
+    border-radius: 5px;
+    background-color:#c0c0c0;
+}
+
+
+
+/* STYLE */
+
 .footer-middle .media-progress-bar::after{
     content: "4.25";
     font-size: 15px;
@@ -274,10 +291,43 @@ footer{
     margin-right: 10px;
 }
 
-.footer-col-right .media-hover{
-    position: absolute;
-    height: 4px;
-    width: 30%;
-    border-radius: 5px;
-    background-color:#c0c0c0;
+a:hover, .main-right a:hover{
+    text-decoration: underline;
+}
+
+
+.upgrade:hover{
+    padding: 15px 50px;
+}
+
+.fa-circle-play:hover{
+    font-size: 25px;
+}
+
+.media-hover:hover{
+    border: 2px solid lightgreen;
+    background-color: lightgreen;
+}
+
+
+.footer-middle .media-progress-bar:hover::after{
+    position: fixed;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 9px;
+    left: 647px;
+}
+
+.footer-col-right .media-progress-bar:hover::after{
+    position: fixed;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    bottom: 31px;
+    right: 78px;
 }
