@@ -30,7 +30,7 @@ main{
     padding: 10px 0;
 }
 
-/* MAIN*/
+/* MAIN ASIDE*/
 
 aside{
     padding: 10px;
@@ -104,4 +104,57 @@ aside hr{
     display: inline-block;
 }
 
+/* MAIN RIGHT */
+
+.main-right{
+    width: calc(100% - 200px);
+    background-color: #1b1f27;
+}
+
+.main-right header{
+    padding-right: 80px;
+    height: 100px;
+    width: calc(100% - 200px);
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.upgrade {
+    color: white;
+    background-color: rgba(8, 11, 18, 0.4);
+    margin-right: 5px;
+    text-decoration: none;
+    border:1px solid white;
+    border-radius: 20px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.main-right nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.main-right ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.main-right ul li a{
+    color: #c0c0c0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 
