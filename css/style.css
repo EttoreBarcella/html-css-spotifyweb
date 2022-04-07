@@ -16,7 +16,21 @@ main{
     display: flex;
 }
 
-/* MAIN 1/2 */
+/* TYPO */
+
+.aside-nav-middle h3, .download a, .name{
+    text-transform: capitalize;
+}
+
+.fa-square-plus{
+    font-size: 40px;
+}
+
+.aside-nav-middle h3{
+    padding: 10px 0;
+}
+
+/* MAIN*/
 
 aside{
     padding: 10px;
@@ -32,3 +46,62 @@ aside{
 .small-logo{
     display: none;
 }
+
+.big-logo{
+    width: 75%;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside ul li a{
+    text-decoration: none;
+    color: #c0c0c0;  
+}
+
+.aside-nav-top img, .fa-square-plus{
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.aside-nav-top li, .aside-nav-middle li{
+    padding: 5px 0;
+}
+
+.aside-nav-middle{
+    overflow-y: auto;
+    height: 80%;
+}
+
+.download, .username{
+    padding: 10px 0;
+}
+
+.download img, .username i{
+    width: 25px;
+    vertical-align: middle;
+}
+
+.download a{
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+aside hr{
+    width: 90%;
+}
+
+.username i{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.name{
+    display: inline-block;
+}
+
+
