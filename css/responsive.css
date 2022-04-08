@@ -79,22 +79,30 @@
         background-color: #1b1f27;
         color: white;
     }
-
+    .main-right nav ul li{
+        margin: auto;
+    }
 }
 
 @media screen and (min-width:601px){
     .main-right header {
         width: calc(100% - 250px);
     }
-    
+
     .recently .col, .created .col, .popular .col{
         width: calc(100% / 2);
+    }
+    .main-right nav ul li{
+        margin: auto;
     }
 }
 
 @media screen and (min-width:700px) {
     .recently .col, .created .col, .popular .col{
         width: calc(100% / 4);
+    }
+    .main-right nav ul li{
+        margin: auto;
     }
 }
 

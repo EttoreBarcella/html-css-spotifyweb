@@ -133,7 +133,7 @@ aside hr{
 }
 
 .main-right header{
-    padding-right: 80px;
+    padding-right: 20px;
     height: 100px;
     width: calc(100% - 200px);
     position: fixed;
@@ -325,7 +325,7 @@ footer{
 
 .song-time .media-progress-bar i{
     position: absolute;
-    bottom: 22%;
+    bottom: 26%;
     left: 36%;
     opacity: 0;
 }
