@@ -67,8 +67,16 @@
         width: calc(100% - 50px);
     }
 
+    .main-right{
+        width: calc(100% - 50px);
+    }
+
     .main-right nav ul li{
         margin: auto;
+    }
+
+    .footer-col-left .hide{
+        display: none;
     }
 }
 
