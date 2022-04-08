@@ -14,6 +14,7 @@ body{
 
 main{
     display: flex;
+    height: calc(100vh - 100px);
 }
 
 
@@ -116,6 +117,7 @@ aside hr{
 .username i{
     font-size: 30px;
     margin-right: 5px;
+    padding-bottom: 5px;
 }
 
 .name{
@@ -126,7 +128,7 @@ aside hr{
 
 .main-right{
     width: calc(100% - 200px);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 100px);
     background-color: #1b1f27;
 }
 
@@ -237,6 +239,7 @@ footer{
     max-width: 25%;
     display: flex;
     align-items: center;
+    flex-shrink: 0;
     gap: 15px;
 }
 
@@ -271,6 +274,19 @@ footer{
     padding: 5px;
 }
 
+.song-time{
+    display: flex;
+    align-items: middle;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.time-start, .time-end{
+    line-height: 10px;
+    padding: 0 5px;
+}
+
 .footer-middle{
     display: flex;
     width: 50%;
@@ -278,8 +294,9 @@ footer{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .media-player{
@@ -294,29 +311,28 @@ footer{
 .footer-middle  .media-progress-bar{
     height: 5px;
     width: 100%;
-    margin-bottom: 20px;
     background-color:#5a5a5a;
     border-radius: 5px;
-    position: relative;
 }
 
 .footer-middle  .media-hover{
     position: absolute;
     height: 4px;
-    width: 30%;
+    width: 10%;
     border-radius: 5px;
     background-color:#c0c0c0;
 }
 
-.footer-middle .media-progress-bar::before{
-    content: "0.25";
-    font-size: 15px;
-    color: #c0c0c0;
+.song-time .media-progress-bar i{
     position: absolute;
-    bottom: -7px;
-    left: -50px ;
+    bottom: 22%;
+    left: 36%;
+    opacity: 0;
 }
 
+.footer-col-right{
+    position: relative;
+}
 
 .footer-col-right .media-hover{
     position: absolute;
@@ -326,18 +342,7 @@ footer{
     background-color:#c0c0c0;
 }
 
-
-
 /* STYLE */
-
-.footer-middle .media-progress-bar::after{
-    content: "4.25";
-    font-size: 15px;
-    color: #c0c0c0;
-    position: absolute;
-    bottom: -7px;
-    right: -50px ;
-}
 
 .footer-col-right .media-progress-bar{
     height: 5px;
@@ -352,7 +357,6 @@ a:hover, .main-right a:hover{
     text-decoration: underline;
 }
 
-
 .upgrade:hover{
     padding: 15px 50px;
 }
@@ -364,29 +368,6 @@ a:hover, .main-right a:hover{
 .media-hover:hover{
     border: 2px solid lightgreen;
     background-color: lightgreen;
-}
-
-
-.footer-middle .media-progress-bar:hover::after{
-    position: fixed;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: 50%;
-    bottom: 9px;
-    left: 647px;
-}
-
-.footer-col-right .media-progress-bar:hover::after{
-    position: fixed;
-    content: "";
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: 50%;
-    bottom: 31px;
-    right: 78px;
 }
 
 .save i:hover{
@@ -408,4 +389,8 @@ a:hover, .main-right a:hover{
     font-family: "Font Awesome 6 Free";
     font-size: 70px;
     transform: translate(-50%, -50%);
+}
+
+.song-time .media-progress-bar i:hover{
+    opacity: 1;
 }

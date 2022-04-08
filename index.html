@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Spotify</title>
 </head>
 <body>
@@ -23,9 +24,9 @@
             <!-- LINK TOP -->
             <div class="aside-nav-top">
                 <ul>
-                    <li><a href="#"><img src="img/home.svg" alt="home"><span class="hide">Home</span></a></li>
-                    <li><a href="#"><img src="img/search.svg" alt="cerca"><span class="hide">Cerca</a></li>
-                    <li><a href="#"><img src="img/libreria.svg" alt="libreria"><span class="hide">Libreria</a></li>
+                    <li><a href="#"><img src="img/home.svg" alt="home"><span class="hide">Home</span><div class="bar"></div></a></a></li>
+                    <li><a href="#"><img src="img/search.svg" alt="cerca"><span class="hide">Cerca</span><div class="bar"></div></a></a></li>
+                    <li><a href="#"><img src="img/libreria.svg" alt="libreria"><span class="hide">La tua libreria</span><div class="bar"></div></a></a></li>
                 </ul>
             </div>
             <!-- LINK MIDDLE -->
@@ -63,12 +64,12 @@
             <!-- MAIN RIGHT BODY -->
                 <nav>
                     <ul>
-                        <li><a href="#">in evidenza</a></li>
+                        <li><a class="center-xs-top" href="#">in evidenza</a></li>
                         <li><a href="#">podcast</a></li>
                         <li><a href="#">classifiche</a></li>
                         <li><a href="#">generi e mood</a></li>
-                        <li><a href="#">nuove uscite</a></li>
-                        <li><a href="#">scopri</a></li>
+                        <li><a class="center-xs" href="#">nuove uscite</a></li>
+                        <li><a class="center-xs" href="#">scopri</a></li>
                     </ul>
                 </nav>
             
@@ -253,8 +254,13 @@
                 <i class="fa-solid fa-forward-step"></i>
                 <i class="fa-solid fa-repeat"></i>
             </div>
-            <div class="media-progress-bar">
-                <div class="media-hover"></div>
+            <div class="song-time">
+                <div class="time-start">0.25</div>
+                <div class="media-progress-bar">
+                    <div class="media-hover"></div>
+                    <i class="fa-solid fa-circle"></i>
+                </div>
+                <div class="time-end">4.25</div>
             </div>
         </div>
         <div class="footer-col-right">
