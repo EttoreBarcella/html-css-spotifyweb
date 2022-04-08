@@ -20,7 +20,7 @@ main{
 
 /* TYPO */
 
-.aside-nav-middle h3, .download a, .name, .recently h2, .info-box-title. .info-box-title-small{
+.aside-nav-middle h3, .download a, .name, .recently h2, .info-box-title ,.info-box-title-small{
     text-transform: capitalize;
 }
 
